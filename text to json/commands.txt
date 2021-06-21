@@ -1,0 +1,7 @@
+ABBREV                                          Abbreviation processsor
+ADDISK                                               (Operator command)
+ADD_REMOTE_ID                        Sets up user id for remote systems
+AMLC                                                 (Operator command)
+ARCHIVE                                     Archives disk files to tape
+ARCHIVE_RELEASE                 Releases an ARCHIVE tape for future use
+ARCHIVE_RESTORE                 Restores files archived on tape to disk
