@@ -10,6 +10,7 @@ with sqlite3.connect("university.db") as con:
                 rank integer
                 )""")
     print("table created")
+    con.commit()
 
 
 con.close()
