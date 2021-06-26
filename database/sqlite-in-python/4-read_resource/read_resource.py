@@ -22,8 +22,14 @@ with sqlite3.connect("university.db") as con:
            ('parvin', 'jolly', '80gty96', 10)''')
 
     print("resource added")
+    
+    # Reading all the rows in the table
+    print("Contents of the students table: ")
+    cur.execute('''SELECT * from students''')
+    print(cur.fetchall())
 
-    # Readoing specific records using the where clause
+    # Reading specific records using the where clause
+    print("Record with the last name KN72 is")
     cur.execute("SELECT * from students WHERE last == 'KN72'")
     print(cur.fetchall())
 
