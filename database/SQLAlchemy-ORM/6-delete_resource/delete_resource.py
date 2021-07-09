@@ -22,7 +22,7 @@ session = Session()
 result = session.query(Employees).all()
 
 
-print("resources before the update oepration")
+print("resources before the delete oepration")
 for row in result:
    print ("id", row.id, ", first_name: ",row.first_name, ", last_name:",row.last_name, ", pay:",row.pay)
 
@@ -39,7 +39,7 @@ try:
 
     endresult = session.query(Employees).all()
 
-    print("resources after the update oepration")
+    print("resources after the delete oepration")
 
     for row in endresult:
 
