@@ -20,6 +20,5 @@ if __name__ == "__main__":
       filename = 'example.json'
 
       a = open_result_file("commands.txt", 0)
-      # filename = 'TLT1.json'
       object1 = crudoopsjson(filename)
       object1.addrow('text file', a)
