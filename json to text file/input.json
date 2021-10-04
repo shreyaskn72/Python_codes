@@ -1,0 +1,57 @@
+{
+    "text file": {
+        "ABBREV": [
+            "ABBREV",
+            "Abbreviation",
+            "processsor"
+        ],
+        "ADDISK": [
+            "ADDISK",
+            "(Operator",
+            "command)"
+        ],
+        "ADD_REMOTE_ID": [
+            "ADD_REMOTE_ID",
+            "Sets",
+            "up",
+            "user",
+            "id",
+            "for",
+            "remote",
+            "systems"
+        ],
+        "AMLC": [
+            "AMLC",
+            "(Operator",
+            "command)"
+        ],
+        "ARCHIVE": [
+            "ARCHIVE",
+            "Archives",
+            "disk",
+            "files",
+            "to",
+            "tape"
+        ],
+        "ARCHIVE_RELEASE": [
+            "ARCHIVE_RELEASE",
+            "Releases",
+            "an",
+            "ARCHIVE",
+            "tape",
+            "for",
+            "future",
+            "use"
+        ],
+        "ARCHIVE_RESTORE": [
+            "ARCHIVE_RESTORE",
+            "Restores",
+            "files",
+            "archived",
+            "on",
+            "tape",
+            "to",
+            "disk"
+        ]
+    }
+}
