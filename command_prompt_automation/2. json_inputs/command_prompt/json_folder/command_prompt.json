@@ -1,0 +1,9 @@
+{
+    "cmd1": "cd C:/Users/shreyas/PythonProjects/command_prompt_automation/venv",
+    "cmd2": "CALL Scripts/activate",
+    "cmd3": "cd C:/Users/shreyas/PythonProjects/command_prompt_automation/0.requirements_folder",
+    "cmd4": "pip3 install -r requirements.txt",
+    "cmd5": "cd C:/Users/shreyas/PythonProjects/command_prompt_automation/venv",
+    "cmd6": "CALL Scripts/deactivate",
+    "cmd7": "exit"
+}
