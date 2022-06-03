@@ -15,7 +15,7 @@ The objective is to run python functions inside main_fun.py from command prompt.
     pip install typer
 
 ## Open
-    Open folder containing mainfun.py in cmd inside virtual environment.
+    Open folder containing main_fun.py in cmd inside virtual environment.
 
 
 
