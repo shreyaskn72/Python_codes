@@ -7,8 +7,8 @@
 # import Queue from multiprocessing Manager
 
 #three workers are running
-#Suppose third process is very safte. Then first two process are ran very fast
-#Two ques are used
+#Suppose third process is very slow. Then first two process are ran very fast
+#Two ques are used to share data between each other
 
 from multiprocessing import Lock
 
