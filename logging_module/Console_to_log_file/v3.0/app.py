@@ -1,7 +1,5 @@
-
-
-
 from module1.helloword import hello
+
 
 if __name__ == "__main__":
     #path = r"C:\Users\shreyaskn72\Downloads\message5.log"
