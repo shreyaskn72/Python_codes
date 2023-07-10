@@ -18,13 +18,14 @@ def get_date_time_now():
 
 
 
+#Pushing console print to log file
 def logging_print_decorator(func):
-    def wrapper(arg1):
-        terminal_log_file_name = "terminal.log"
+    def wrapper(arg1, *args):
+        terminal_log_file_name = arg1+".log"
 
         with closing(Tee(terminal_log_file_name, "a", channel="stdout")) as outputstream:
             try:
-                func(arg1)
+                func(*args)
 
             except Exception as e:
                 print(e)
@@ -36,16 +37,18 @@ def logging_print_decorator(func):
 
 
 
-
-
 @logging_print_decorator
-def hello(name):
-    #r
+def greetings(name, city):
     print(get_date_time_now(), "signed in time")
-    print("hello",name)
-
+    print("hello", name)
+    print("too many word below:")
+    print("dfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    print("Welcome to", city)
 
 
 
 if __name__ == "__main__":
-    hello("mr AB CD EF")
+    filepath = "terminal_output"
+    name = "Shreyas"
+    city = "Bengaluru"
+    greetings(filepath, name, city)
