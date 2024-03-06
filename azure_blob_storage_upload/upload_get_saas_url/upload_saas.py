@@ -37,7 +37,10 @@ file_path = "path_to_your_file"
 blob_name = "name_for_blob_in_storage"
 account_key = "your_account_key"
 
-# Call the function to upload the file
-blob_url, blob_name = upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name, account_key)
-print("Uploaded to:", blob_url)
-print("Blob Name:", blob_name)
+if __name__ == '__main__':
+    # Call the function to upload the file
+    blob_url, blob_name = upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name,
+                                               account_key)
+    print("Uploaded to:", blob_url)
+    print("Blob Name:", blob_name)
+
