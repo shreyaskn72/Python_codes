@@ -36,8 +36,9 @@ pip install azure-storage-blob
 
 2. Run the script:
 
+"
 python upload_to_azure_blob.py
-
+"
 
 3. The script will upload the specified file to Azure Blob Storage. Once uploaded, it will display the URL of the uploaded blob and the blob name.
 
