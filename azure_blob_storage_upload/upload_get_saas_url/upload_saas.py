@@ -1,4 +1,4 @@
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, BlobPermissions
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, generate_blob_sas, BlobSasPermissions
 from datetime import datetime, timedelta
 
 def upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name):
@@ -16,8 +16,11 @@ def upload_to_azure_blob(storage_connection_string, container_name, file_path, b
         blob_client.upload_blob(data)
 
     # Get a SAS token for the blob (valid for 24 hours)
-    token = blob_client.generate_shared_access_signature(
-        permission=BlobPermissions(read=True),
+    token = generate_blob_sas(
+        blob_client.account_name,
+        container_name,
+        blob_name,
+        permission=BlobSasPermissions(read=True),
         expiry=datetime.utcnow() + timedelta(hours=24)
     )
 
