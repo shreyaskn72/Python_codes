@@ -1,7 +1,7 @@
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient, generate_blob_sas, BlobSasPermissions
 from datetime import datetime, timedelta
 
-def upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name):
+def upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name, account_key):
     # Create a BlobServiceClient using the connection string
     blob_service_client = BlobServiceClient.from_connection_string(storage_connection_string)
 
@@ -20,6 +20,7 @@ def upload_to_azure_blob(storage_connection_string, container_name, file_path, b
         blob_client.account_name,
         container_name,
         blob_name,
+        account_key=account_key,
         permission=BlobSasPermissions(read=True),
         expiry=datetime.utcnow() + timedelta(hours=24)
     )
@@ -34,8 +35,9 @@ storage_connection_string = "your_storage_connection_string"
 container_name = "your_container_name"
 file_path = "path_to_your_file"
 blob_name = "name_for_blob_in_storage"
+account_key = "your_account_key"
 
 # Call the function to upload the file
-blob_url, blob_name = upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name)
+blob_url, blob_name = upload_to_azure_blob(storage_connection_string, container_name, file_path, blob_name, account_key)
 print("Uploaded to:", blob_url)
 print("Blob Name:", blob_name)
