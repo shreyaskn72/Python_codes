@@ -15,12 +15,15 @@ Before running this script, make sure you have the following:
 
 1. Clone this repository:
 
+```
 git clone <repository_url>
+```
 
 2. Install the required dependencies:
 
+```
 pip install azure-storage-blob
-
+```
 
 ## Usage
 
