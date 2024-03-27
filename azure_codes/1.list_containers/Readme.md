@@ -23,7 +23,3 @@ python list_containers.py
 ## Script Explanation
 
 - `list_containers.py`: Python script that lists all containers in the Azure Blob Storage account.
-
-## File Structure
-
-
